@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to your git repository directory
-cd /home/labuser/.clab/labtest || exit
+cd /home/labuser/.clab/test || exit
 
 # Check if there are any changes (tracked or untracked)
 if [[ -n $(git status --porcelain) ]]; then
