@@ -7,9 +7,10 @@ cd /home/labuser/.clab/test || exit
 git pull
 if [[ -n $(git status --porcelain) ]]; then
     echo "$(date): Changes detected. Committing and pushing..."
+    git checkout dev
     git add -A
     git commit -m "Auto-commit: $(date '+%Y-%m-%d %H:%M:%S')"
-    git push origin main
+    git push origin dev
 else
     echo "$(date): No changes detected. Skipping."
 fi
