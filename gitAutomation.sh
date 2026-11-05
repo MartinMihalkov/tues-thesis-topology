@@ -4,6 +4,7 @@
 cd /home/labuser/.clab/test || exit
 
 # Check if there are any changes (tracked or untracked)
+git pull
 if [[ -n $(git status --porcelain) ]]; then
     echo "$(date): Changes detected. Committing and pushing..."
     git add -A
