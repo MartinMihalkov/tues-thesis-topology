@@ -1,0 +1,55 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "trafficRateAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "bbox1",
+      "position": {
+        "x": 460,
+        "y": 280
+      }
+    },
+    {
+      "id": "bbox2",
+      "position": {
+        "x": 640,
+        "y": 280
+      },
+      "icon": "client",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "jr1-1",
+      "position": {
+        "x": 580,
+        "y": 460
+      },
+      "icon": "pe",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "cr1",
+      "position": {
+        "x": 520,
+        "y": 580
+      },
+      "icon": "pe",
+      "interfacePattern": "e{n}"
+    },
+    {
+      "id": "cs1",
+      "position": {
+        "x": 580,
+        "y": 540
+      },
+      "icon": "switch",
+      "interfacePattern": "e{n}"
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {}
+}

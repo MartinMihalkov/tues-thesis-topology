@@ -1,0 +1,23 @@
+name: "labtest"
+
+topology:
+  nodes:
+    bbox1:
+      kind: linux
+      image: busybox:latest
+    bbox2:
+      kind: linux
+      image: busybox:latest
+    jr1-1:
+      kind: juniper_vjunosrouter
+      image: vrnetlab/juniper_vjunos-router:26.2R1.7
+    cr1:
+      kind: cisco_iol
+      type: iol
+      image: vrnetlab/cisco_iol:17.18.02
+    cs1:
+      kind: cisco_iol
+      type: l2
+      image: vrnetlab/cisco_iol:L2-17.18.02
+  links:
+    - endpoints: [ "bbox2:eth1", "bbox1:eth1" ]
