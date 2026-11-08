@@ -21,3 +21,4 @@ topology:
       image: vrnetlab/cisco_iol:L2-17.18.02
   links:
     - endpoints: [ "bbox2:eth1", "bbox1:eth1" ]
+    - endpoints: [ "jr1-1:eth1", "cs1:e1" ]
